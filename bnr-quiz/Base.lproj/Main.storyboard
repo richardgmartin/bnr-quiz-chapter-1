@@ -20,13 +20,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96K-KX-4SS">
                                 <rect key="frame" x="288" y="20" width="25" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZf-Qy-Qo9">
                                 <rect key="frame" x="288" y="289" width="25" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wp-9Z-VaG">
@@ -43,9 +43,17 @@
                                     <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wOV-Ne-lQS"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQv-sI-aek">
+                                <rect key="frame" x="279" y="20" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="IQv-sI-aek" firstAttribute="top" secondItem="96K-KX-4SS" secondAttribute="top" id="7Hf-nk-CZH"/>
+                            <constraint firstItem="IQv-sI-aek" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BuU-ee-Sqk"/>
                             <constraint firstItem="96K-KX-4SS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="HHu-nW-V7q"/>
                             <constraint firstItem="96K-KX-4SS" firstAttribute="centerX" secondItem="9Wp-9Z-VaG" secondAttribute="centerX" id="QQx-lZ-zji"/>
                             <constraint firstItem="96K-KX-4SS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VQa-pO-ByN"/>
@@ -58,7 +66,8 @@
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="JZf-Qy-Qo9" id="FEi-1s-Noc"/>
-                        <outlet property="questionLabel" destination="96K-KX-4SS" id="md1-cW-9Lz"/>
+                        <outlet property="currentQuestionLabel" destination="96K-KX-4SS" id="kT1-MQ-pt7"/>
+                        <outlet property="nextQuestionLabel" destination="IQv-sI-aek" id="qRh-vW-LPo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
